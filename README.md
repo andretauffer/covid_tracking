@@ -2,6 +2,10 @@
 
 This is a basic project for visualization of data requested from the [Covid Traking Api](https://covidtracking.com/api). It was setup with react and material UI for the client and node express for the server. Currently it show the total deaths in the USA in the last 3 days, and also displays hospitalized, total deaths and recent deaths by state when you hover with the mouse over each state.
 
+## It is live
+
+And you can see it [here](https://covid-up-to-date.herokuapp.com/)
+
 ## Available scripts
 
 #### To run the server

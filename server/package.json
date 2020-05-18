@@ -5,7 +5,12 @@
   "main": "index.js",
   "scripts": {
     "server": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pre-heroku:image": "cd ../client && npm run build",
+    "heroku:image": "heroku container:push web -a covid-up-to-date",
+    "heroku:release": "heroku container:release web -a covid-up-to-date",
+    "heroku:open": "heroku open -a covide-up-to-date"
   },
   "keywords": [],
   "author": "",
