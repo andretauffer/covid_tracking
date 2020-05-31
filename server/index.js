@@ -9,11 +9,6 @@ app.use(express.static(path.join(__dirname, "client/build")));
 
 app.use("/api/states", states);
 
-// // Handles any requests that don't match the ones above
-// app.get("*", (req, res) => {
-//   res.redirect(process.env.HOME_URL);
-// });
-
 // The "catchall" handler: for any request that doesn't
 // match one above, send back React's index.html file.
 app.get("*", (req, res) => {
